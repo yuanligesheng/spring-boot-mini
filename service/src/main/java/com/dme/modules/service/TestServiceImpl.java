@@ -13,9 +13,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class TestServiceImpl implements TestService {
 
-   /* @Autowired
-    private TestDao testDao;*/
-
     @Override
     public void testServiceFunction() {
 
@@ -23,6 +20,7 @@ public class TestServiceImpl implements TestService {
          * 业务处理逻辑
          */
         System.out.println("我是service中的方法，我处理业务逻辑---------");
+
         TestUtils.testUtils();
     }
 }
